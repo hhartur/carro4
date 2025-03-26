@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Garagem Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script> <!-- Incluindo GSAP -->
+</head>
+<body>
+    <h1>Garagem Inteligente</h1>
+
+    <!-- SELEÇÃO DE VEÍCULO -->
+    <div id="selecao-veiculo">
+        <h2>Selecione o Veículo:</h2>
+        <button id="selecionar-carro">Carro</button>
+        <button id="selecionar-carro-esportivo">Carro Esportivo</button>
+        <button id="selecionar-caminhao">Caminhão</button>
+    </div>
+
+    <div id="veiculo-selecionado">
+        <h2>Detalhes do Veículo</h2>
+        <div id="img-container" style="width: 100%;"><img id="veiculo-imagem" src="" alt="Imagem do Veículo" style="width: 250px;"></div>
+        <p id="veiculo-info">Selecione um veículo acima.</p>
+        <div id="status-veiculo"></div>
+        <div id="velocidade-display"></div>
+        <progress id="velocidade-barra" value="0" max="100"></progress>
+    </div>
+
+    <div id="controles">
+        <button id="ligar-desligar">Ligar</button>
+        <button id="acelerar">Acelerar</button>
+        <button id="frear">Frear</button>
+        <button id="buzinar">Buzinar</button>
+        <button id="turbo">Turbo</button>
+        <button id="carregar">Carregar</button>
+        <input type="number" id="carga-quantidade" placeholder="Quantidade">
+    </div>
+
+    <div id="alertas"></div>
+
+    <script src="scripts/Veiculo.js"></script>
+    <script src="scripts/Carro.js"></script>
+    <script src="scripts/CarroEsportivo.js"></script>
+    <script src="scripts/Caminhao.js"></script>
+    <script src="scripts/Garagem.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
